@@ -1,0 +1,136 @@
+#container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+}
+
+#panda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#head{
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: -15px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#head::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+#body{
+  height: 320px;
+  width: 290px;
+  background-color: white;
+  border-radius: 45%;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.paw-top{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 150px;
+  width: 80px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#orelhas{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: -60px;
+}
+
+.orelha {
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.orelha::after{
+  content: '';
+  height: 30px;
+  width: 30px;
+  background-color: pink;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#eyes {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.eye{
+  height: 45px;
+  width: 35px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye::after{
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#paws-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -40px;
+  padding: 0 15px;
+}
+
+.paw {
+  height: 75px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#rotate-left{
+  transform: rotate(-15deg);
+}
+
+#rotate-right{
+  transform: rotate(15deg);
+}
